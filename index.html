@@ -5,6 +5,8 @@
   <meta name="description" content="In-depth reviews of the top 10 selling Instant Pots. Discover which model is best for your family and kitchen with expert insights and affiliate links.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Top 10 Instant Pot Reviews</title>
+  <!-- Google Fonts for a warmer, more inviting feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     /* Global Reset & Base Styles */
     * {
@@ -13,10 +15,11 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #fcf7f2;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff8f0;
       color: #4a4a4a;
       line-height: 1.6;
+      padding-bottom: 2rem;
     }
     a {
       text-decoration: none;
@@ -24,17 +27,20 @@
     }
     /* Header */
     header {
-      background-color: #d35400;
+      background: url('https://via.placeholder.com/1600x200/ffccbc/ffffff?text=Hand-drawn+Art') no-repeat center;
+      background-size: cover;
       color: #fff;
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
       z-index: 1000;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
     }
     nav ul {
@@ -45,7 +51,7 @@
     }
     nav ul li a {
       color: #fff;
-      font-weight: 500;
+      font-weight: 600;
     }
     nav ul li a:hover,
     nav ul li a:focus {
@@ -53,10 +59,10 @@
     }
     /* Hero Section */
     .hero {
-      background: url('https://via.placeholder.com/1600x600?text=Top+10+Instant+Pot+Reviews') no-repeat center center/cover;
+      background: url('https://via.placeholder.com/1600x600/ffe0b2/000000?text=Warm+Family+Kitchen+Art') no-repeat center center/cover;
       padding: 4rem 2rem;
       text-align: center;
-      color: #fff;
+      color: #3e2723;
       position: relative;
     }
     .hero::after {
@@ -66,7 +72,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(255, 255, 255, 0.6);
       z-index: 1;
     }
     .hero h1, .hero p {
@@ -75,6 +81,7 @@
       text-align: center;
     }
     .hero h1 {
+      font-family: 'Lora', serif;
       font-size: 2.8rem;
       margin-bottom: 1rem;
     }
@@ -92,7 +99,11 @@
     section.review {
       margin-bottom: 3rem;
       padding-bottom: 3rem;
-      border-bottom: 3px solid #e0e0e0;
+      border-bottom: 3px solid #f2e6d9;
+      background-color: #fffaf3;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 1.5rem;
     }
     section.review:last-of-type {
       border-bottom: none;
@@ -100,6 +111,7 @@
       padding-bottom: 0;
     }
     section.review h2 {
+      font-family: 'Lora', serif;
       color: #d35400;
       margin-bottom: 0.3rem;
       text-align: center;
@@ -116,21 +128,24 @@
       height: auto;
       display: block;
       margin: 0 auto 1rem;
-      border-radius: 4px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     section.review .review-content {
       margin-bottom: 1rem;
       text-align: justify;
+      padding: 0 0.5rem;
     }
     section.review .btn {
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
       background-color: #d35400;
       color: #fff;
       padding: 0.6rem 1.2rem;
       border-radius: 4px;
       font-weight: bold;
-      margin: 0 auto;
-      text-align: center;
+      transition: background-color 0.3s ease;
     }
     section.review .btn:hover,
     section.review .btn:focus {
@@ -143,10 +158,11 @@
       text-align: center;
       padding: 1rem 0;
       font-size: 0.9rem;
+      margin-top: 2rem;
     }
     footer .disclaimer {
       margin-top: 0.5rem;
-      opacity: 0.8;
+      opacity: 0.9;
       font-size: 0.8rem;
     }
   </style>
@@ -174,7 +190,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Top 10 Instant Pot Reviews</h1>
-    <p>Read our in-depth reviews of the best Instant Pot models available. Find the perfect fit for your family and kitchen, and shop directly on Amazon.</p>
+    <p>Discover our in-depth reviews of the best Instant Pot models. Find the perfect appliance for your family and kitchen, and shop directly on Amazon with our exclusive affiliate links.</p>
   </section>
 
   <!-- Main Content -->
@@ -187,9 +203,7 @@
       <div class="review-content">
         <p>The Instant Pot Duo Nova sets the standard with its user-friendly interface, versatile cooking modes, and reliable performance. Perfect for busy families who want to simplify meal prep without compromising quality. Whether you're making soups, stews, or even yogurt, the Duo Nova delivers consistent results every time.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 2: Instant Pot Duo 60 -->
@@ -200,9 +214,7 @@
       <div class="review-content">
         <p>The Instant Pot Duo 60 offers exceptional value for families on a budget. It provides the essential functions of pressure cooking, slow cooking, and more—without the extra bells and whistles. This model is perfect for those who want a reliable, no‑nonsense kitchen appliance that gets the job done every time.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 3: Instant Pot Mini -->
@@ -213,9 +225,7 @@
       <div class="review-content">
         <p>The Instant Pot Mini is designed for smaller households or individuals with limited counter space. Despite its compact size, it packs all the essential features of its larger counterparts. Its efficiency and ease of use make it a great option for singles, couples, or small families looking to simplify cooking.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 4: Instant Pot Ultra -->
@@ -226,9 +236,7 @@
       <div class="review-content">
         <p>The Instant Pot Ultra is perfect for the culinary enthusiast who craves precision. Featuring advanced controls and customizable cooking programs, it allows you to experiment with gourmet recipes with ease. If you love having complete control over your cooking, the Ultra’s intuitive interface and robust performance make it a top choice.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 5: Instant Pot Max -->
@@ -239,9 +247,7 @@
       <div class="review-content">
         <p>The Instant Pot Max is engineered for speed and power. Its rapid pressure-cooking capabilities are ideal for households that demand quick, efficient meal preparation without sacrificing flavor. This model is well-suited for busy families who need to get dinner on the table fast without compromising on quality.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 6: Instant Pot Lux -->
@@ -252,9 +258,7 @@
       <div class="review-content">
         <p>The Instant Pot Lux is a fantastic option for families looking for a quality appliance without a hefty price tag. It covers all the basics with a simple interface and reliable performance. Its affordability makes it an attractive choice for first‑time buyers and those who want to enjoy the benefits of pressure cooking on a budget.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 7: Instant Pot Smart -->
@@ -265,9 +269,7 @@
       <div class="review-content">
         <p>The Instant Pot Smart integrates modern technology into a traditional kitchen appliance. With smart controls and app connectivity, it appeals to those who want a high-tech cooking experience. This model is perfect for tech-savvy users looking to streamline their cooking process and enjoy innovative features.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 8: Instant Pot Premium -->
@@ -278,9 +280,7 @@
       <div class="review-content">
         <p>The Instant Pot Premium represents the pinnacle of quality and performance. With superior build quality, advanced features, and an elegant design, it offers a luxurious cooking experience for discerning home chefs. If you’re ready to invest in a top‑of‑the‑line appliance, the Premium is an excellent choice for elevating your culinary game.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 9: Instant Pot Express -->
@@ -291,9 +291,7 @@
       <div class="review-content">
         <p>The Instant Pot Express is designed for speed. Its rapid pressure-cooking capabilities are unmatched, making it ideal for families with hectic schedules who need meals prepared in record time. Enjoy quick, delicious meals without the wait – a real lifesaver for busy evenings.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
     <!-- Review 10: Instant Pot Eco -->
@@ -304,9 +302,7 @@
       <div class="review-content">
         <p>The Instant Pot Eco focuses on energy efficiency without sacrificing performance. Ideal for environmentally conscious families, it helps reduce your kitchen’s carbon footprint while delivering reliable results. This model is a smart choice for those who value sustainability along with great cooking performance.</p>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
   </main>
 
