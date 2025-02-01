@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Discover family-friendly Instant Pot recipes and reviews designed for busy moms who love to create healthy, delicious meals.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instant Pot Family Reviews</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Instant Pot Family Reviews",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://yourdomain.com/#review-1",
+        "name": "Instant Pot Duo 7-in-1 Review"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://yourdomain.com/#review-2",
+        "name": "Instant Pot Ultra Review"
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Inline some basic adjustments to complement the new design */
+    body {
+      background-color: #fcf7f2;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #d35400;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      text-decoration: underline;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1600x600?text=Family+Cooking+with+Love') no-repeat center center/cover;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    .hero h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      position: relative;
+      z-index: 2;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    /* Main Content */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+    /* Reviews List Layout */
+    .reviews-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .review-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .review-card:hover,
+    .review-card:focus-within {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .review-card h2 {
+      color: #d35400;
+    }
+    .review-card p {
+      margin-bottom: 1rem;
+    }
+    .review-card .read-more {
+      display: inline-block;
+      background-color: #d35400;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .review-card .read-more:hover,
+    .review-card .read-more:focus {
+      background-color: #bf360c;
+    }
+    /* Review Detail Section */
+    #review-content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    #review-content h1 {
+      margin-bottom: 1rem;
+      color: #d35400;
+    }
+    #review-content p.affiliate {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    #back-button {
+      background: none;
+      border: none;
+      color: #d35400;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    #back-button:hover,
+    #back-button:focus {
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+    footer {
+      background-color: #d35400;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .disclaimer {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      color: #fff;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main Navigation">
+      <div class="logo">Instant Pot Family Reviews</div>
+      <ul class="nav-menu">
+        <li><a href="index.html" title="Home">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Cook with Love &amp; Simplicity</h1>
+    <p>Discover trusted reviews, delicious family recipes, and practical tips to help you create memorable meals with your Instant Pot.</p>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Home Section: Listing Reviews -->
+    <section id="home">
+      <h2>Featured Reviews</h2>
+      <ul class="reviews-list">
+        <li>
+          <article class="review-card" data-id="1">
+            <h2>Instant Pot Duo 7-in-1 Review</h2>
+            <p>Explore why this favorite model is a must-have for busy families. Trusted by moms everywhere!</p>
+            <a href="#" class="read-more" data-id="1">Discover More</a>
+          </article>
+        </li>
+        <li>
+          <article class="review-card" data-id="2">
+            <h2>Instant Pot Ultra Review</h2>
+            <p>Learn how this model’s advanced features make it easy to prepare healthy meals for your loved ones.</p>
+            <a href="#" class="read-more" data-id="2">Discover More</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Review Detail Section (Hidden by Default) -->
+    <section id="review-content" class="hidden" aria-live="polite">
+      <button id="back-button" aria-label="Back to Home">← Back to Home</button>
+      <article id="review-article">
+        <h1 id="review-title"></h1>
+        <div id="review-body"></div>
+        <!-- Affiliate Disclosure and Link -->
+        <p class="affiliate">
+          Ready to experience effortless cooking? Check the latest price on 
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=youraffiliateid" target="_blank" rel="noopener noreferrer">
+            Amazon
+          </a>.
+        </p>
+        <!-- Amazon Affiliate Disclaimer -->
+        <p class="affiliate disclaimer">
+          As an Amazon Associate, I earn from qualifying purchases.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer with Affiliate Disclaimer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Instant Pot Family Reviews. All rights reserved.</p>
+    <p class="disclaimer">
+      As an Amazon Associate, I earn from qualifying purchases.
+    </p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

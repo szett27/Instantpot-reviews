@@ -1,0 +1,151 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+/* Reviews List Layout */
+.reviews-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.review-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover,
+.review-card:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.review-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.review-card p {
+  margin-bottom: 1rem;
+}
+
+.review-card .read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.review-card .read-more:hover,
+.review-card .read-more:focus {
+  text-decoration: underline;
+}
+
+/* Review Detail Section */
+#review-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+#review-content h1 {
+  margin-bottom: 1rem;
+}
+
+#review-content p.affiliate {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#back-button:hover,
+#back-button:focus {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
