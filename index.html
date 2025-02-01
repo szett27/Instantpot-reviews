@@ -2,56 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Discover family-friendly Instant Pot recipes and reviews designed for busy moms who love to create healthy, delicious meals.">
+  <meta name="description" content="Discover family-friendly Instant Pot recipes and the top-ranked Instant Pots designed for busy moms who want delicious meals and smart kitchen solutions.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instant Pot Family Reviews</title>
+  <title>Instant Pot Family Reviews & Recipes</title>
   <link rel="stylesheet" href="style.css">
-  
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Instant Pot Family Reviews",
+    "name": "Instant Pot Family Reviews & Recipes",
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
-        "url": "https://yourdomain.com/#review-1",
-        "name": "Instant Pot Duo 7-in-1 Review"
+        "url": "https://yourdomain.com/#rankings",
+        "name": "Top Instant Pot Rankings"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "url": "https://yourdomain.com/#review-2",
-        "name": "Instant Pot Ultra Review"
+        "url": "https://yourdomain.com/#recipes",
+        "name": "Popular Recipes"
       }
     ]
   }
   </script>
   <style>
-    /* Basic Reset */
+    /* Global Reset & Base Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    /* Global Styles */
     body {
-      background-color: #fcf7f2;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #fcf7f2;
       color: #4a4a4a;
       line-height: 1.6;
     }
     a {
       text-decoration: none;
+      color: inherit;
     }
-    /* Header */
+    /* Header & Navigation */
     header {
       background-color: #d35400;
       color: #fff;
       padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header .logo {
       font-size: 1.8rem;
@@ -89,15 +90,15 @@
       background-color: rgba(0, 0, 0, 0.4);
       z-index: 1;
     }
-    .hero h1 {
+    .hero h1, .hero p {
       position: relative;
       z-index: 2;
-      font-size: 2.5rem;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
     .hero p {
-      position: relative;
-      z-index: 2;
       font-size: 1.2rem;
       max-width: 600px;
       margin: 0 auto;
@@ -108,53 +109,16 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h2 {
-      margin-bottom: 1rem;
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
       color: #d35400;
-    }
-    /* Reviews List (Featured Reviews) */
-    .reviews-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .review-card {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .review-card:hover,
-    .review-card:focus-within {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .review-card h2 {
-      color: #d35400;
-      margin-bottom: 0.5rem;
-    }
-    .review-card p {
       margin-bottom: 1rem;
+      border-bottom: 2px solid #d35400;
+      padding-bottom: 0.3rem;
     }
-    .review-card .read-more {
-      display: inline-block;
-      background-color: #d35400;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-    .review-card .read-more:hover,
-    .review-card .read-more:focus {
-      background-color: #bf360c;
-    }
-    /* Ranking Section for Top 10 Instant Pots */
-    #rankings {
-      margin-top: 3rem;
-    }
+    /* Rankings Section Styles */
     .ranking-list {
       list-style: none;
       display: grid;
@@ -180,65 +144,71 @@
       margin-bottom: 0.5rem;
     }
     .ranking-card h3 {
-      margin-bottom: 0.3rem;
       color: #d35400;
+      margin-bottom: 0.3rem;
     }
     .ranking-card p.category {
       font-style: italic;
       margin-bottom: 0.5rem;
     }
-    .ranking-card ul.recipe-list {
+    .ranking-card .btn {
+      display: inline-block;
+      background-color: #d35400;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .ranking-card .btn:hover,
+    .ranking-card .btn:focus {
+      background-color: #bf360c;
+    }
+    /* Recipes Section Styles */
+    .recipe-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .recipe-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .recipe-card:hover,
+    .recipe-card:focus-within {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .recipe-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
       margin-bottom: 0.5rem;
-      padding-left: 1.2rem;
     }
-    .ranking-card ul.recipe-list li {
-      margin-bottom: 0.3rem;
+    .recipe-card h3 {
+      color: #d35400;
+      margin-bottom: 0.5rem;
+    }
+    .recipe-card p.description {
       font-size: 0.9rem;
+      margin-bottom: 0.5rem;
     }
-    .ranking-card .read-more {
+    .recipe-card .btn {
       background-color: #d35400;
       color: #fff;
       padding: 0.4rem 0.8rem;
       border-radius: 4px;
       font-weight: bold;
       display: inline-block;
-      margin-top: 0.5rem;
     }
-    .ranking-card .read-more:hover,
-    .ranking-card .read-more:focus {
+    .recipe-card .btn:hover,
+    .recipe-card .btn:focus {
       background-color: #bf360c;
-    }
-    /* Review Detail Section (Hidden by Default) */
-    #review-content {
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    #review-content h1 {
-      margin-bottom: 1rem;
-      color: #d35400;
-    }
-    #review-content p.affiliate {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-    #back-button {
-      background: none;
-      border: none;
-      color: #d35400;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      cursor: pointer;
-    }
-    #back-button:hover,
-    #back-button:focus {
-      text-decoration: underline;
-    }
-    .hidden {
-      display: none;
     }
     /* Footer */
     footer {
@@ -246,24 +216,23 @@
       color: #fff;
       text-align: center;
       padding: 1rem 0;
-      margin-top: 2rem;
       font-size: 0.9rem;
     }
     .disclaimer {
       font-size: 0.8rem;
-      margin-top: 1rem;
-      color: #fff;
+      margin-top: 0.5rem;
       opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header & Navigation -->
   <header role="banner">
+    <div class="logo">Instant Pot Family Reviews &amp; Recipes</div>
     <nav role="navigation" aria-label="Main Navigation">
-      <div class="logo">Instant Pot Family Reviews</div>
-      <ul class="nav-menu">
-        <li><a href="index.html" title="Home">Home</a></li>
+      <ul>
+        <li><a href="#rankings">Rankings</a></li>
+        <li><a href="#recipes">Recipes</a></li>
       </ul>
     </nav>
   </header>
@@ -271,208 +240,86 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Cook with Love &amp; Simplicity</h1>
-    <p>Discover trusted reviews, delicious family recipes, and practical tips to help you create memorable meals with your Instant Pot.</p>
+    <p>Discover the top Instant Pots for your family and explore delicious recipes to make every meal memorable.</p>
   </section>
 
   <!-- Main Content -->
-  <main id="main-content">
-    <!-- Featured Reviews Section -->
-    <section id="home">
-      <h2>Featured Reviews</h2>
-      <ul class="reviews-list">
-        <li>
-          <article class="review-card" data-id="1">
-            <h2>Instant Pot Duo 7-in-1 Review</h2>
-            <p>Explore why this favorite model is a must-have for busy families. Trusted by moms everywhere!</p>
-            <a href="#" class="read-more" data-id="1">Discover More</a>
-          </article>
-        </li>
-        <li>
-          <article class="review-card" data-id="2">
-            <h2>Instant Pot Ultra Review</h2>
-            <p>Learn how this model’s advanced features make it easy to prepare healthy meals for your loved ones.</p>
-            <a href="#" class="read-more" data-id="2">Discover More</a>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Ranking Section: Top 10 Instant Pots -->
+  <main>
+    <!-- Rankings Section -->
     <section id="rankings">
-      <h2>Top 10 Instant Pot Rankings</h2>
+      <h2>Top Instant Pot Rankings</h2>
       <ul class="ranking-list">
-        <!-- Card 1 -->
+        <!-- Example Ranking Card -->
         <li class="ranking-card">
           <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Duo+Nova" alt="Instant Pot Duo Nova">
           <h3>Instant Pot Duo Nova</h3>
           <p class="category">Best Overall</p>
-          <ul class="recipe-list">
-            <li>Beef Stew</li>
-            <li>Chicken Curry</li>
-            <li>Vegetable Soup</li>
-            <li>Rice Pudding</li>
-            <li>Yogurt</li>
-          </ul>
-          <a href="#" class="read-more" data-id="3">Learn More</a>
+          <div>
+            <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+            <a href="#" class="btn" data-id="3">Learn More</a>
+          </div>
         </li>
-        <!-- Card 2 -->
+        <!-- Repeat additional ranking cards as needed -->
         <li class="ranking-card">
           <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Duo+60" alt="Instant Pot Duo 60">
           <h3>Instant Pot Duo 60</h3>
           <p class="category">Best Value</p>
-          <ul class="recipe-list">
-            <li>Spaghetti &amp; Meatballs</li>
-            <li>Chicken Noodle Soup</li>
-            <li>Chili</li>
-            <li>Steamed Vegetables</li>
-            <li>Pudding</li>
-          </ul>
-          <a href="#" class="read-more" data-id="4">Learn More</a>
+          <div>
+            <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+            <a href="#" class="btn" data-id="4">Learn More</a>
+          </div>
         </li>
-        <!-- Card 3 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Mini" alt="Instant Pot Mini">
-          <h3>Instant Pot Mini</h3>
-          <p class="category">Best for Small Families</p>
-          <ul class="recipe-list">
-            <li>Mini Pot Roast</li>
-            <li>Steamed Fish</li>
-            <li>Small Batch Chili</li>
-            <li>Quinoa Salad</li>
-            <li>Mini Cheesecake</li>
-          </ul>
-          <a href="#" class="read-more" data-id="5">Learn More</a>
-        </li>
-        <!-- Card 4 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Ultra" alt="Instant Pot Ultra">
-          <h3>Instant Pot Ultra</h3>
-          <p class="category">Most Advanced</p>
-          <ul class="recipe-list">
-            <li>Advanced Risotto</li>
-            <li>Gourmet Soups</li>
-            <li>Pressure Cooked Pork</li>
-            <li>Exotic Curry</li>
-            <li>Artisan Bread Pudding</li>
-          </ul>
-          <a href="#" class="read-more" data-id="6">Learn More</a>
-        </li>
-        <!-- Card 5 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Max" alt="Instant Pot Max">
-          <h3>Instant Pot Max</h3>
-          <p class="category">Best for Power Users</p>
-          <ul class="recipe-list">
-            <li>Quick Beans</li>
-            <li>Pressure-Cooked Steak</li>
-            <li>Creamy Pasta</li>
-            <li>Exotic Stews</li>
-            <li>Deluxe Desserts</li>
-          </ul>
-          <a href="#" class="read-more" data-id="7">Learn More</a>
-        </li>
-        <!-- Card 6 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Lux" alt="Instant Pot Lux">
-          <h3>Instant Pot Lux</h3>
-          <p class="category">On a Budget</p>
-          <ul class="recipe-list">
-            <li>Budget Beef Stew</li>
-            <li>Simple Chicken Soup</li>
-            <li>Rice Pilaf</li>
-            <li>Budget-Friendly Chili</li>
-            <li>Easy Pudding</li>
-          </ul>
-          <a href="#" class="read-more" data-id="8">Learn More</a>
-        </li>
-        <!-- Card 7 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Smart" alt="Instant Pot Smart">
-          <h3>Instant Pot Smart</h3>
-          <p class="category">Best for Tech Lovers</p>
-          <ul class="recipe-list">
-            <li>Smart Stew</li>
-            <li>Digital Chicken Curry</li>
-            <li>Gourmet Rice</li>
-            <li>Modern Soup</li>
-            <li>Techy Tiramisu</li>
-          </ul>
-          <a href="#" class="read-more" data-id="9">Learn More</a>
-        </li>
-        <!-- Card 8 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Premium" alt="Instant Pot Premium">
-          <h3>Instant Pot Premium</h3>
-          <p class="category">Luxury Choice</p>
-          <ul class="recipe-list">
-            <li>Luxury Lobster Bisque</li>
-            <li>Premium Beef Bourguignon</li>
-            <li>Elegant Risotto</li>
-            <li>Gourmet Chicken</li>
-            <li>Decadent Dessert</li>
-          </ul>
-          <a href="#" class="read-more" data-id="10">Learn More</a>
-        </li>
-        <!-- Card 9 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Express" alt="Instant Pot Express">
-          <h3>Instant Pot Express</h3>
-          <p class="category">Fastest Cooking</p>
-          <ul class="recipe-list">
-            <li>Express Chicken Curry</li>
-            <li>Quick Beef Stew</li>
-            <li>Rapid Veggie Soup</li>
-            <li>Instant Rice</li>
-            <li>Fast Pudding</li>
-          </ul>
-          <a href="#" class="read-more" data-id="11">Learn More</a>
-        </li>
-        <!-- Card 10 -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Eco" alt="Instant Pot Eco">
-          <h3>Instant Pot Eco</h3>
-          <p class="category">Most Energy Efficient</p>
-          <ul class="recipe-list">
-            <li>Eco-Friendly Soup</li>
-            <li>Green Chicken Curry</li>
-            <li>Sustainable Stew</li>
-            <li>Eco Rice Bowl</li>
-            <li>Organic Pudding</li>
-          </ul>
-          <a href="#" class="read-more" data-id="12">Learn More</a>
-        </li>
+        <!-- (Add additional cards here for IDs 5 to 12) -->
       </ul>
     </section>
 
-    <!-- Review Detail Section (Hidden by Default) -->
-    <section id="review-content" class="hidden" aria-live="polite">
-      <button id="back-button" aria-label="Back to Home">← Back to Home</button>
-      <article id="review-article">
-        <h1 id="review-title"></h1>
-        <div id="review-body"></div>
-        <!-- Affiliate Disclosure and Link with Amazon ID -->
-        <p class="affiliate">
-          Ready to experience effortless cooking? Check the latest price on 
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" target="_blank" rel="noopener noreferrer">
-            Amazon
-          </a>.
-        </p>
-        <!-- Amazon Affiliate Disclaimer -->
-        <p class="affiliate disclaimer">
-          As an Amazon Associate, I earn from qualifying purchases.
-        </p>
-      </article>
+    <!-- Recipes Section -->
+    <section id="recipes">
+      <h2>Popular Instant Pot Recipes</h2>
+      <ul class="recipe-list">
+        <!-- Example Recipe Card -->
+        <li class="recipe-card">
+          <img src="https://via.placeholder.com/250x150?text=Beef+Stew" alt="Beef Stew">
+          <h3>Hearty Beef Stew</h3>
+          <p class="description">A comforting and hearty beef stew perfect for a family dinner.</p>
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
+        </li>
+        <li class="recipe-card">
+          <img src="https://via.placeholder.com/250x150?text=Chicken+Curry" alt="Chicken Curry">
+          <h3>Spicy Chicken Curry</h3>
+          <p class="description">A delicious, spicy chicken curry that’s easy to make in your Instant Pot.</p>
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
+        </li>
+        <li class="recipe-card">
+          <img src="https://via.placeholder.com/250x150?text=Vegetable+Soup" alt="Vegetable Soup">
+          <h3>Vegetable Soup</h3>
+          <p class="description">A healthy, warming vegetable soup full of seasonal produce.</p>
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
+        </li>
+        <li class="recipe-card">
+          <img src="https://via.placeholder.com/250x150?text=Rice+Pudding" alt="Rice Pudding">
+          <h3>Creamy Rice Pudding</h3>
+          <p class="description">A rich and creamy rice pudding that doubles as dessert.</p>
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
+        </li>
+        <li class="recipe-card">
+          <img src="https://via.placeholder.com/250x150?text=Homemade+Yogurt" alt="Homemade Yogurt">
+          <h3>Homemade Yogurt</h3>
+          <p class="description">Easily make your own creamy yogurt right at home in the Instant Pot.</p>
+          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
+        </li>
+        <!-- (Add more recipe cards as desired) -->
+      </ul>
     </section>
   </main>
 
   <!-- Footer with Affiliate Disclaimer -->
   <footer role="contentinfo">
-    <p>&copy; 2025 Instant Pot Family Reviews. All rights reserved.</p>
-    <p class="disclaimer">
-      As an Amazon Associate, I earn from qualifying purchases.
-    </p>
+    <p>&copy; 2025 Instant Pot Family Reviews &amp; Recipes. All rights reserved.</p>
+    <p class="disclaimer">As an Amazon Associate, I earn from qualifying purchases.</p>
   </footer>
-  
+
+  <!-- Optionally include script.js for dynamic "Learn More" functionality -->
   <script src="script.js"></script>
 </body>
 </html>
