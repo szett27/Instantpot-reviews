@@ -30,18 +30,18 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      text-align: center;
     }
     header .logo {
       font-size: 1.8rem;
       font-weight: bold;
-    }
-    nav {
-      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     nav ul {
       list-style: none;
-      display: flex;
+      display: inline-flex;
       gap: 1rem;
+      margin-top: 0.5rem;
     }
     nav ul li a {
       color: #fff;
@@ -72,6 +72,7 @@
     .hero h1, .hero p {
       position: relative;
       z-index: 2;
+      text-align: center;
     }
     .hero h1 {
       font-size: 2.8rem;
@@ -90,31 +91,36 @@
     }
     section.review {
       margin-bottom: 3rem;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 2rem;
+      padding-bottom: 3rem;
+      border-bottom: 3px solid #e0e0e0;
     }
     section.review:last-of-type {
       border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
     section.review h2 {
       color: #d35400;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
+      text-align: center;
     }
     section.review p.category {
       font-style: italic;
       color: #7f7f7f;
       margin-bottom: 1rem;
+      text-align: center;
     }
     section.review img {
       width: 100%;
       max-width: 400px;
       height: auto;
       display: block;
-      margin-bottom: 1rem;
+      margin: 0 auto 1rem;
       border-radius: 4px;
     }
     section.review .review-content {
       margin-bottom: 1rem;
+      text-align: justify;
     }
     section.review .btn {
       display: inline-block;
@@ -123,6 +129,8 @@
       padding: 0.6rem 1.2rem;
       border-radius: 4px;
       font-weight: bold;
+      margin: 0 auto;
+      text-align: center;
     }
     section.review .btn:hover,
     section.review .btn:focus {
@@ -175,120 +183,130 @@
     <section id="review-1" class="review">
       <h2>Instant Pot Duo Nova</h2>
       <p class="category">Best Overall</p>
-      <img src="https://via.placeholder.com/400x300?text=Duo+Nova" alt="Instant Pot Duo Nova">
+      <img src="https://m.media-amazon.com/images/I/61bX8iOe3aL._AC_SL1500_.jpg" alt="Instant Pot Duo Nova">
       <div class="review-content">
-        <p>The Instant Pot Duo Nova sets the standard with its user-friendly interface, versatile cooking modes, and reliable performance. Perfect for busy families who want to simplify meal prep without compromising quality.</p>
-        <p>Whether you're making soups, stews, or even yogurt, the Duo Nova delivers consistent results every time.</p>
+        <p>The Instant Pot Duo Nova sets the standard with its user-friendly interface, versatile cooking modes, and reliable performance. Perfect for busy families who want to simplify meal prep without compromising quality. Whether you're making soups, stews, or even yogurt, the Duo Nova delivers consistent results every time.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 2: Instant Pot Duo 60 -->
     <section id="review-2" class="review">
       <h2>Instant Pot Duo 60</h2>
       <p class="category">Best Value</p>
-      <img src="https://via.placeholder.com/400x300?text=Duo+60" alt="Instant Pot Duo 60">
+      <img src="https://m.media-amazon.com/images/I/71V36V9U8vL._AC_SL1500_.jpg" alt="Instant Pot Duo 60">
       <div class="review-content">
-        <p>The Instant Pot Duo 60 offers exceptional value for families on a budget. It provides the essential functions of pressure cooking, slow cooking, and more—without the extra bells and whistles.</p>
-        <p>This model is perfect for those who want a reliable, no‑nonsense kitchen appliance that gets the job done every time.</p>
+        <p>The Instant Pot Duo 60 offers exceptional value for families on a budget. It provides the essential functions of pressure cooking, slow cooking, and more—without the extra bells and whistles. This model is perfect for those who want a reliable, no‑nonsense kitchen appliance that gets the job done every time.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 3: Instant Pot Mini -->
     <section id="review-3" class="review">
       <h2>Instant Pot Mini</h2>
       <p class="category">Best for Small Households</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Mini" alt="Instant Pot Mini">
+      <img src="https://m.media-amazon.com/images/I/61TqHcx1JLL._AC_SL1500_.jpg" alt="Instant Pot Mini">
       <div class="review-content">
-        <p>The Instant Pot Mini is designed for smaller households or individuals with limited counter space. Despite its compact size, it packs all the essential features of its larger counterparts.</p>
-        <p>Its efficiency and ease of use make it a great option for singles, couples, or small families looking to simplify cooking.</p>
+        <p>The Instant Pot Mini is designed for smaller households or individuals with limited counter space. Despite its compact size, it packs all the essential features of its larger counterparts. Its efficiency and ease of use make it a great option for singles, couples, or small families looking to simplify cooking.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 4: Instant Pot Ultra -->
     <section id="review-4" class="review">
       <h2>Instant Pot Ultra</h2>
       <p class="category">Most Advanced</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Ultra" alt="Instant Pot Ultra">
+      <img src="https://m.media-amazon.com/images/I/71nht6ZRHlL._AC_SL1500_.jpg" alt="Instant Pot Ultra">
       <div class="review-content">
-        <p>The Instant Pot Ultra is perfect for the culinary enthusiast who craves precision. Featuring advanced controls and customizable cooking programs, it allows you to experiment with gourmet recipes with ease.</p>
-        <p>If you love having complete control over your cooking, the Ultra’s intuitive interface and robust performance make it a top choice.</p>
+        <p>The Instant Pot Ultra is perfect for the culinary enthusiast who craves precision. Featuring advanced controls and customizable cooking programs, it allows you to experiment with gourmet recipes with ease. If you love having complete control over your cooking, the Ultra’s intuitive interface and robust performance make it a top choice.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 5: Instant Pot Max -->
     <section id="review-5" class="review">
       <h2>Instant Pot Max</h2>
       <p class="category">Best for Power Users</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Max" alt="Instant Pot Max">
+      <img src="https://m.media-amazon.com/images/I/71xT8FkHuQL._AC_SL1500_.jpg" alt="Instant Pot Max">
       <div class="review-content">
-        <p>The Instant Pot Max is engineered for speed and power. Its rapid pressure-cooking capabilities are ideal for households that demand quick, efficient meal preparation without sacrificing flavor.</p>
-        <p>This model is well-suited for busy families who need to get dinner on the table fast without compromising on quality.</p>
+        <p>The Instant Pot Max is engineered for speed and power. Its rapid pressure-cooking capabilities are ideal for households that demand quick, efficient meal preparation without sacrificing flavor. This model is well-suited for busy families who need to get dinner on the table fast without compromising on quality.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 6: Instant Pot Lux -->
     <section id="review-6" class="review">
       <h2>Instant Pot Lux</h2>
       <p class="category">Budget-Friendly Option</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Lux" alt="Instant Pot Lux">
+      <img src="https://m.media-amazon.com/images/I/61Isy0fP8FL._AC_SL1500_.jpg" alt="Instant Pot Lux">
       <div class="review-content">
-        <p>The Instant Pot Lux is a fantastic option for families looking for a quality appliance without a hefty price tag. It covers all the basics with a simple interface and reliable performance.</p>
-        <p>Its affordability makes it an attractive choice for first‑time buyers and those who want to enjoy the benefits of pressure cooking on a budget.</p>
+        <p>The Instant Pot Lux is a fantastic option for families looking for a quality appliance without a hefty price tag. It covers all the basics with a simple interface and reliable performance. Its affordability makes it an attractive choice for first‑time buyers and those who want to enjoy the benefits of pressure cooking on a budget.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 7: Instant Pot Smart -->
     <section id="review-7" class="review">
       <h2>Instant Pot Smart</h2>
       <p class="category">For Tech Lovers</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Smart" alt="Instant Pot Smart">
+      <img src="https://m.media-amazon.com/images/I/61rD1TgOzML._AC_SL1500_.jpg" alt="Instant Pot Smart">
       <div class="review-content">
-        <p>The Instant Pot Smart integrates modern technology into a traditional kitchen appliance. With smart controls and app connectivity, it appeals to those who want a high-tech cooking experience.</p>
-        <p>This model is perfect for tech-savvy users looking to streamline their cooking process and enjoy innovative features.</p>
+        <p>The Instant Pot Smart integrates modern technology into a traditional kitchen appliance. With smart controls and app connectivity, it appeals to those who want a high-tech cooking experience. This model is perfect for tech-savvy users looking to streamline their cooking process and enjoy innovative features.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 8: Instant Pot Premium -->
     <section id="review-8" class="review">
       <h2>Instant Pot Premium</h2>
       <p class="category">Luxury Choice</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Premium" alt="Instant Pot Premium">
+      <img src="https://m.media-amazon.com/images/I/61QjsN44gFL._AC_SL1500_.jpg" alt="Instant Pot Premium">
       <div class="review-content">
-        <p>The Instant Pot Premium represents the pinnacle of quality and performance. With superior build quality, advanced features, and an elegant design, it offers a luxurious cooking experience for discerning home chefs.</p>
-        <p>If you’re ready to invest in a top‑of‑the‑line appliance, the Premium is an excellent choice for elevating your culinary game.</p>
+        <p>The Instant Pot Premium represents the pinnacle of quality and performance. With superior build quality, advanced features, and an elegant design, it offers a luxurious cooking experience for discerning home chefs. If you’re ready to invest in a top‑of‑the‑line appliance, the Premium is an excellent choice for elevating your culinary game.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 9: Instant Pot Express -->
     <section id="review-9" class="review">
       <h2>Instant Pot Express</h2>
       <p class="category">Fastest Cooking</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Express" alt="Instant Pot Express">
+      <img src="https://m.media-amazon.com/images/I/61aUFrEt3zL._AC_SL1500_.jpg" alt="Instant Pot Express">
       <div class="review-content">
-        <p>The Instant Pot Express is designed for speed. Its rapid pressure-cooking capabilities are unmatched, making it ideal for families with hectic schedules who need meals prepared in record time.</p>
-        <p>Enjoy quick, delicious meals without the wait – a real lifesaver for busy evenings.</p>
+        <p>The Instant Pot Express is designed for speed. Its rapid pressure-cooking capabilities are unmatched, making it ideal for families with hectic schedules who need meals prepared in record time. Enjoy quick, delicious meals without the wait – a real lifesaver for busy evenings.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
 
     <!-- Review 10: Instant Pot Eco -->
     <section id="review-10" class="review">
       <h2>Instant Pot Eco</h2>
       <p class="category">Most Energy Efficient</p>
-      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Eco" alt="Instant Pot Eco">
+      <img src="https://m.media-amazon.com/images/I/61phgJb-0VL._AC_SL1500_.jpg" alt="Instant Pot Eco">
       <div class="review-content">
-        <p>The Instant Pot Eco focuses on energy efficiency without sacrificing performance. Ideal for environmentally conscious families, it helps reduce your kitchen’s carbon footprint while delivering reliable results.</p>
-        <p>This model is a smart choice for those who value sustainability along with great cooking performance.</p>
+        <p>The Instant Pot Eco focuses on energy efficiency without sacrificing performance. Ideal for environmentally conscious families, it helps reduce your kitchen’s carbon footprint while delivering reliable results. This model is a smart choice for those who value sustainability along with great cooking performance.</p>
       </div>
-      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      <div style="text-align: center;">
+        <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
     </section>
   </main>
 
