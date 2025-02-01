@@ -2,32 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Discover family-friendly Instant Pot recipes and the top-ranked Instant Pots designed for busy moms who want delicious meals and smart kitchen solutions.">
+  <meta name="description" content="In-depth reviews of the top 10 selling Instant Pots. Discover which model is best for your family and kitchen with expert insights and affiliate links.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instant Pot Family Reviews & Recipes</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Structured Data (JSON-LD) for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Instant Pot Family Reviews & Recipes",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://yourdomain.com/#rankings",
-        "name": "Top Instant Pot Rankings"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "url": "https://yourdomain.com/#recipes",
-        "name": "Popular Recipes"
-      }
-    ]
-  }
-  </script>
+  <title>Top 10 Instant Pot Reviews</title>
   <style>
     /* Global Reset & Base Styles */
     * {
@@ -45,7 +22,7 @@
       text-decoration: none;
       color: inherit;
     }
-    /* Header & Navigation */
+    /* Header */
     header {
       background-color: #d35400;
       color: #fff;
@@ -58,11 +35,13 @@
       font-size: 1.8rem;
       font-weight: bold;
     }
+    nav {
+      margin-top: 0.5rem;
+    }
     nav ul {
       list-style: none;
       display: flex;
       gap: 1rem;
-      margin-top: 0.5rem;
     }
     nav ul li a {
       color: #fff;
@@ -74,7 +53,7 @@
     }
     /* Hero Section */
     .hero {
-      background: url('https://via.placeholder.com/1600x600?text=Family+Cooking+with+Love') no-repeat center center/cover;
+      background: url('https://via.placeholder.com/1600x600?text=Top+10+Instant+Pot+Reviews') no-repeat center center/cover;
       padding: 4rem 2rem;
       text-align: center;
       color: #fff;
@@ -109,105 +88,44 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    section {
+    section.review {
       margin-bottom: 3rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 2rem;
     }
-    section h2 {
+    section.review:last-of-type {
+      border-bottom: none;
+    }
+    section.review h2 {
       color: #d35400;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #d35400;
-      padding-bottom: 0.3rem;
-    }
-    /* Rankings Section Styles */
-    .ranking-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .ranking-card {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .ranking-card:hover,
-    .ranking-card:focus-within {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .ranking-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
       margin-bottom: 0.5rem;
     }
-    .ranking-card h3 {
-      color: #d35400;
-      margin-bottom: 0.3rem;
-    }
-    .ranking-card p.category {
+    section.review p.category {
       font-style: italic;
-      margin-bottom: 0.5rem;
+      color: #7f7f7f;
+      margin-bottom: 1rem;
     }
-    .ranking-card .btn {
-      display: inline-block;
-      background-color: #d35400;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      font-weight: bold;
-      margin-right: 0.5rem;
-      margin-top: 0.5rem;
-    }
-    .ranking-card .btn:hover,
-    .ranking-card .btn:focus {
-      background-color: #bf360c;
-    }
-    /* Recipes Section Styles */
-    .recipe-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .recipe-card {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .recipe-card:hover,
-    .recipe-card:focus-within {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .recipe-card img {
+    section.review img {
       width: 100%;
+      max-width: 400px;
       height: auto;
+      display: block;
+      margin-bottom: 1rem;
       border-radius: 4px;
-      margin-bottom: 0.5rem;
     }
-    .recipe-card h3 {
-      color: #d35400;
-      margin-bottom: 0.5rem;
+    section.review .review-content {
+      margin-bottom: 1rem;
     }
-    .recipe-card p.description {
-      font-size: 0.9rem;
-      margin-bottom: 0.5rem;
-    }
-    .recipe-card .btn {
+    section.review .btn {
+      display: inline-block;
       background-color: #d35400;
       color: #fff;
-      padding: 0.4rem 0.8rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 4px;
       font-weight: bold;
-      display: inline-block;
     }
-    .recipe-card .btn:hover,
-    .recipe-card .btn:focus {
+    section.review .btn:hover,
+    section.review .btn:focus {
       background-color: #bf360c;
     }
     /* Footer */
@@ -218,108 +136,166 @@
       padding: 1rem 0;
       font-size: 0.9rem;
     }
-    .disclaimer {
-      font-size: 0.8rem;
+    footer .disclaimer {
       margin-top: 0.5rem;
       opacity: 0.8;
+      font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
-  <!-- Header & Navigation -->
+  <!-- Header -->
   <header role="banner">
-    <div class="logo">Instant Pot Family Reviews &amp; Recipes</div>
+    <div class="logo">Top 10 Instant Pot Reviews</div>
     <nav role="navigation" aria-label="Main Navigation">
       <ul>
-        <li><a href="#rankings">Rankings</a></li>
-        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#review-1">1. Duo Nova</a></li>
+        <li><a href="#review-2">2. Duo 60</a></li>
+        <li><a href="#review-3">3. Mini</a></li>
+        <li><a href="#review-4">4. Ultra</a></li>
+        <li><a href="#review-5">5. Max</a></li>
+        <li><a href="#review-6">6. Lux</a></li>
+        <li><a href="#review-7">7. Smart</a></li>
+        <li><a href="#review-8">8. Premium</a></li>
+        <li><a href="#review-9">9. Express</a></li>
+        <li><a href="#review-10">10. Eco</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Cook with Love &amp; Simplicity</h1>
-    <p>Discover the top Instant Pots for your family and explore delicious recipes to make every meal memorable.</p>
+    <h1>Top 10 Instant Pot Reviews</h1>
+    <p>Read our in-depth reviews of the best Instant Pot models available. Find the perfect fit for your family and kitchen, and shop directly on Amazon.</p>
   </section>
 
   <!-- Main Content -->
   <main>
-    <!-- Rankings Section -->
-    <section id="rankings">
-      <h2>Top Instant Pot Rankings</h2>
-      <ul class="ranking-list">
-        <!-- Example Ranking Card -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Duo+Nova" alt="Instant Pot Duo Nova">
-          <h3>Instant Pot Duo Nova</h3>
-          <p class="category">Best Overall</p>
-          <div>
-            <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-            <a href="#" class="btn" data-id="3">Learn More</a>
-          </div>
-        </li>
-        <!-- Repeat additional ranking cards as needed -->
-        <li class="ranking-card">
-          <img src="https://via.placeholder.com/300x200?text=Instant+Pot+Duo+60" alt="Instant Pot Duo 60">
-          <h3>Instant Pot Duo 60</h3>
-          <p class="category">Best Value</p>
-          <div>
-            <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
-            <a href="#" class="btn" data-id="4">Learn More</a>
-          </div>
-        </li>
-        <!-- (Add additional cards here for IDs 5 to 12) -->
-      </ul>
+    <!-- Review 1: Instant Pot Duo Nova -->
+    <section id="review-1" class="review">
+      <h2>Instant Pot Duo Nova</h2>
+      <p class="category">Best Overall</p>
+      <img src="https://via.placeholder.com/400x300?text=Duo+Nova" alt="Instant Pot Duo Nova">
+      <div class="review-content">
+        <p>The Instant Pot Duo Nova sets the standard with its user-friendly interface, versatile cooking modes, and reliable performance. Perfect for busy families who want to simplify meal prep without compromising quality.</p>
+        <p>Whether you're making soups, stews, or even yogurt, the Duo Nova delivers consistent results every time.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
 
-    <!-- Recipes Section -->
-    <section id="recipes">
-      <h2>Popular Instant Pot Recipes</h2>
-      <ul class="recipe-list">
-        <!-- Example Recipe Card -->
-        <li class="recipe-card">
-          <img src="https://via.placeholder.com/250x150?text=Beef+Stew" alt="Beef Stew">
-          <h3>Hearty Beef Stew</h3>
-          <p class="description">A comforting and hearty beef stew perfect for a family dinner.</p>
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
-        </li>
-        <li class="recipe-card">
-          <img src="https://via.placeholder.com/250x150?text=Chicken+Curry" alt="Chicken Curry">
-          <h3>Spicy Chicken Curry</h3>
-          <p class="description">A delicious, spicy chicken curry that’s easy to make in your Instant Pot.</p>
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
-        </li>
-        <li class="recipe-card">
-          <img src="https://via.placeholder.com/250x150?text=Vegetable+Soup" alt="Vegetable Soup">
-          <h3>Vegetable Soup</h3>
-          <p class="description">A healthy, warming vegetable soup full of seasonal produce.</p>
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
-        </li>
-        <li class="recipe-card">
-          <img src="https://via.placeholder.com/250x150?text=Rice+Pudding" alt="Rice Pudding">
-          <h3>Creamy Rice Pudding</h3>
-          <p class="description">A rich and creamy rice pudding that doubles as dessert.</p>
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
-        </li>
-        <li class="recipe-card">
-          <img src="https://via.placeholder.com/250x150?text=Homemade+Yogurt" alt="Homemade Yogurt">
-          <h3>Homemade Yogurt</h3>
-          <p class="description">Easily make your own creamy yogurt right at home in the Instant Pot.</p>
-          <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy Ingredients</a>
-        </li>
-        <!-- (Add more recipe cards as desired) -->
-      </ul>
+    <!-- Review 2: Instant Pot Duo 60 -->
+    <section id="review-2" class="review">
+      <h2>Instant Pot Duo 60</h2>
+      <p class="category">Best Value</p>
+      <img src="https://via.placeholder.com/400x300?text=Duo+60" alt="Instant Pot Duo 60">
+      <div class="review-content">
+        <p>The Instant Pot Duo 60 offers exceptional value for families on a budget. It provides the essential functions of pressure cooking, slow cooking, and more—without the extra bells and whistles.</p>
+        <p>This model is perfect for those who want a reliable, no‑nonsense kitchen appliance that gets the job done every time.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 3: Instant Pot Mini -->
+    <section id="review-3" class="review">
+      <h2>Instant Pot Mini</h2>
+      <p class="category">Best for Small Households</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Mini" alt="Instant Pot Mini">
+      <div class="review-content">
+        <p>The Instant Pot Mini is designed for smaller households or individuals with limited counter space. Despite its compact size, it packs all the essential features of its larger counterparts.</p>
+        <p>Its efficiency and ease of use make it a great option for singles, couples, or small families looking to simplify cooking.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 4: Instant Pot Ultra -->
+    <section id="review-4" class="review">
+      <h2>Instant Pot Ultra</h2>
+      <p class="category">Most Advanced</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Ultra" alt="Instant Pot Ultra">
+      <div class="review-content">
+        <p>The Instant Pot Ultra is perfect for the culinary enthusiast who craves precision. Featuring advanced controls and customizable cooking programs, it allows you to experiment with gourmet recipes with ease.</p>
+        <p>If you love having complete control over your cooking, the Ultra’s intuitive interface and robust performance make it a top choice.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 5: Instant Pot Max -->
+    <section id="review-5" class="review">
+      <h2>Instant Pot Max</h2>
+      <p class="category">Best for Power Users</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Max" alt="Instant Pot Max">
+      <div class="review-content">
+        <p>The Instant Pot Max is engineered for speed and power. Its rapid pressure-cooking capabilities are ideal for households that demand quick, efficient meal preparation without sacrificing flavor.</p>
+        <p>This model is well-suited for busy families who need to get dinner on the table fast without compromising on quality.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 6: Instant Pot Lux -->
+    <section id="review-6" class="review">
+      <h2>Instant Pot Lux</h2>
+      <p class="category">Budget-Friendly Option</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Lux" alt="Instant Pot Lux">
+      <div class="review-content">
+        <p>The Instant Pot Lux is a fantastic option for families looking for a quality appliance without a hefty price tag. It covers all the basics with a simple interface and reliable performance.</p>
+        <p>Its affordability makes it an attractive choice for first‑time buyers and those who want to enjoy the benefits of pressure cooking on a budget.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 7: Instant Pot Smart -->
+    <section id="review-7" class="review">
+      <h2>Instant Pot Smart</h2>
+      <p class="category">For Tech Lovers</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Smart" alt="Instant Pot Smart">
+      <div class="review-content">
+        <p>The Instant Pot Smart integrates modern technology into a traditional kitchen appliance. With smart controls and app connectivity, it appeals to those who want a high-tech cooking experience.</p>
+        <p>This model is perfect for tech-savvy users looking to streamline their cooking process and enjoy innovative features.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 8: Instant Pot Premium -->
+    <section id="review-8" class="review">
+      <h2>Instant Pot Premium</h2>
+      <p class="category">Luxury Choice</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Premium" alt="Instant Pot Premium">
+      <div class="review-content">
+        <p>The Instant Pot Premium represents the pinnacle of quality and performance. With superior build quality, advanced features, and an elegant design, it offers a luxurious cooking experience for discerning home chefs.</p>
+        <p>If you’re ready to invest in a top‑of‑the‑line appliance, the Premium is an excellent choice for elevating your culinary game.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 9: Instant Pot Express -->
+    <section id="review-9" class="review">
+      <h2>Instant Pot Express</h2>
+      <p class="category">Fastest Cooking</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Express" alt="Instant Pot Express">
+      <div class="review-content">
+        <p>The Instant Pot Express is designed for speed. Its rapid pressure-cooking capabilities are unmatched, making it ideal for families with hectic schedules who need meals prepared in record time.</p>
+        <p>Enjoy quick, delicious meals without the wait – a real lifesaver for busy evenings.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    </section>
+
+    <!-- Review 10: Instant Pot Eco -->
+    <section id="review-10" class="review">
+      <h2>Instant Pot Eco</h2>
+      <p class="category">Most Energy Efficient</p>
+      <img src="https://via.placeholder.com/400x300?text=Instant+Pot+Eco" alt="Instant Pot Eco">
+      <div class="review-content">
+        <p>The Instant Pot Eco focuses on energy efficiency without sacrificing performance. Ideal for environmentally conscious families, it helps reduce your kitchen’s carbon footprint while delivering reliable results.</p>
+        <p>This model is a smart choice for those who value sustainability along with great cooking performance.</p>
+      </div>
+      <a href="https://www.amazon.com/dp/B00FLYWNYQ?tag=zetterstromfa-20" class="btn" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
     </section>
   </main>
 
   <!-- Footer with Affiliate Disclaimer -->
   <footer role="contentinfo">
-    <p>&copy; 2025 Instant Pot Family Reviews &amp; Recipes. All rights reserved.</p>
+    <p>&copy; 2025 Top 10 Instant Pot Reviews. All rights reserved.</p>
     <p class="disclaimer">As an Amazon Associate, I earn from qualifying purchases.</p>
   </footer>
-
-  <!-- Optionally include script.js for dynamic "Learn More" functionality -->
-  <script src="script.js"></script>
 </body>
 </html>
